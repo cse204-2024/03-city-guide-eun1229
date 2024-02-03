@@ -11,6 +11,9 @@
       <nav>
         <ul id="navbar">
           <li class="navtab">
+            About
+          </li>
+          <li class="navtab">
             Hotels
           </li>
           <li class="navtab">
@@ -23,8 +26,18 @@
       </nav>
     </header>
     <main>
+      <section class="category" id="about">
+        <h2 class="category_header">About Chicago</h2>
+        <div id="chicago_description">
+          <img src="chicago.jpg" alt="chicago_river" title="Chicago" height="333px" width="500px">
+          <p id="chicago_description_text">Chicago, Illinois is the third largest city in the United States with a population of nearly 3 million people as of 2024.
+            Its location on the shore of Lake Michigan makes the city with a unique landscape that intertwines modern architecture with the
+            natural beauty of its surroundings. Chicago's culture has contributed much to the visual arts, food, music, theater, and more.
+            Its culture, beautiful architecture, food, and variety of activities makes it a prime spot for tourists to visit.</p>
+        </div>
+      </section>
       <section class="category" id="hotels">
-        <h2 class="category_header">Hotels</h2>
+        <h2 class="category_header">Hotel Reccomendations</h2>
         <div id="hotel_data">
           <table>
             <thead>
@@ -110,17 +123,36 @@
       </section>
       <section class="category" id="restaurants">
         <h2 class="category_header">Restaurants</h2>
+        <p>These are the three restaurants in Chicago with the most Yelp reviews.</p>
         <ol>
           <li>
             <h3>Girl &amp; the Goat</h3>
+            <div class="restaurant_desc" id="girlgoat_description">
+              <p><em>$$$</em></p>
+              <p>Girl and the Goat serves new American cuisine with a unique twist. It has been a restaurant on the Michelin guide for many years.</p>
+              <p><strong>Address: </strong>809 W Randolph St</p>
+              <p><strong>Hours: </strong>4:30-11:00PM Daily</p>
+            </div>
           </li>
           <li>
             <h3>Wildberry Pancakes and Cafe</h3>
+            <div class="restaurant_desc" id="wildberry_description">
+              <p><em>$$</em></p>
+              <p>Wildberry Pancakes and Cafe is a brunch restaurant known for their large portions. They serve traditional breakfast and brunch options, like pancakes, omelettes, and hashes.</p>
+              <p><strong>Address: </strong>130 E Randolph St</p>
+              <p><strong>Hours: </strong>7:00AM-2:00PM Daily</p>
+            </div>
           </li>
           <li>
             <h3>Au Cheval</h3>
+            <div class="restaurant_desc" id="aucheval_description">
+              <p><em>$$</em></p>
+              <p>Au Cheval describes themselves as a diner with a passion for eggs. They are most known for their burger.</p>
+              <p><strong>Address: </strong>800 W Randolph St</p>
+              <p><strong>Hours: </strong>10:00AM-11:15PM Daily</p>
+            </div>
           </li>
-        </ol>
+        </ol><br>
           <form method="GET">
             <p>Have you tried any of these restaurants?</p>
             <input type="checkbox" value="girlandgoat" name="tried1">Girl &amp; the Goat<br>
