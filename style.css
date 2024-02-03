@@ -112,6 +112,15 @@ li.navtab {
   width: 50%;
 }
 
+.navtab > a {
+  color: white;
+  text-decoration: none;
+}
+
+.navtab > a:hover {
+  color: rgb(199, 1, 100);
+  text-decoration: underline;
+}
 /* End of Classes */
 
 /* IDs */
