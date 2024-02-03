@@ -22,105 +22,135 @@
         </ul>
       </nav>
     </header>
-    <section class="category" id="hotels">
-      <h2 class="category_header">Hotels</h2>
-      <table>
-        <thead>
-          <tr>
-            <th colspan="4" scope="col">Hotels</th>
-          </tr>
-          <tr>
-            <th scope="col">
-              Name
-            </th>
-            <th scope="col">
-              Address
-            </th>
-            <th scope="col">
-              Stars
-            </th>
-            <th scope="col">
-              Budget
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="col">
-              Freehand Chicago
-            </th>
-            <th scope="col">
-              19 E Ohio St
-            </th>
-            <th scope="col">
-              3/5
-            </th>
-            <th scope="col">
-              $
-            </th>
-          </tr>
-          <tr>
-            <th scope="row">
-              CitizenM Chicago
-            </th>
-            <td>
-              80 E Wacker Pl
-            </td>
-            <td>
-              4/5
-            </td>
-            <td>
-              $$
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              LondonHouse Chicago
-            </th>
-            <td>
-              85 E Wacker Drive
-            </td>
-            <td>
-              4/5
-            </td>
-            <td>
-              $$$
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              The Langham
-            </th>
-            <td>
-              8330 N. Wabash Avenue
-            </td>
-            <td>
-              5/5
-            </td>
-            <td>
-              $$$$
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="category" id="restaurants">
-      <h2 class="category_header">Restaurants</h2>
-      <ol>
-        <li>
-          <h3>Girl &amp; the Goat</h3>
-        </li>
-        <li>
-          <h3>Wildberry Pancakes and Cafe</h3>
-        </li>
-        <li>
-          <h3>Au Cheval</h3>
-        </li>
-      </ol>
-    </section>
-    <section class="category" id="activities">
-      <h2 class="category_header">Activities</h2>
-    </section>
+    <main>
+      <section class="category" id="hotels">
+        <h2 class="category_header">Hotels</h2>
+        <div id="hotel_data">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" scope="col">Hotels</th>
+              </tr>
+              <tr>
+                <th scope="col">
+                  Name
+                </th>
+                <th scope="col">
+                  Address
+                </th>
+                <th scope="col">
+                  Stars
+                </th>
+                <th scope="col">
+                  Budget
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://freehandhotels.com/chicago/">Freehand Chicago</a>
+                </td>
+                <td>
+                  19 E Ohio St
+                </td>
+                <td class="centerdata">
+                  3/5
+                </td>
+                <td class="centerdata">
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.citizenm.com/hotels/united-states/chicago/chicago-downtown-hotel">CitizenM Chicago</a>
+                </td>
+                <td>
+                  80 E Wacker Pl
+                </td>
+                <td class="centerdata">
+                  4/5
+                </td>
+                <td class="centerdata">
+                  $$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://londonhousechicago.com/">LondonHouse Chicago</a>
+                </td>
+                <td>
+                  85 E Wacker Drive
+                </td>
+                <td class="centerdata">
+                  4/5
+                </td>
+                <td class="centerdata">
+                  $$$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.langhamhotels.com/en/the-langham/chicago/">The Langham, Chicago</a>
+                </td>
+                <td>
+                  8330 N. Wabash Avenue
+                </td>
+                <td class="centerdata">
+                  5/5
+                </td>
+                <td class="centerdata">
+                  $$$$
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <iframe title="hotelsmap" src="https://www.google.com/maps/d/u/0/embed?mid=1UMNYz07YIN46rQnu3IKij5AsWNityNQ&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
+      </section>
+      <section class="category" id="restaurants">
+        <h2 class="category_header">Restaurants</h2>
+        <ol>
+          <li>
+            <h3>Girl &amp; the Goat</h3>
+          </li>
+          <li>
+            <h3>Wildberry Pancakes and Cafe</h3>
+          </li>
+          <li>
+            <h3>Au Cheval</h3>
+          </li>
+        </ol>
+          <form method="GET">
+            <p>Have you tried any of these restaurants?</p>
+            <input type="checkbox" value="girlandgoat" name="tried1">Girl &amp; the Goat<br>
+            <input type="checkbox" value="wildberry" name="tried2">Wildberry Pancakes and Cafe<br>
+            <input type="checkbox" value="aucheval" name="tried3">Au Cheval<br><br>
+            <button type="submit" value="submit">Submit</button>
+          </form>
+      </section>
+      <section class="category" id="activities">
+        <h2 class="category_header">Activities</h2>
+        <ul id="activities_list">
+          <li>
+            <h3>Architecture River Cruise</h3>
+          </li>
+          <li>
+            <h3>Visit Millennium Park</h3>
+          </li>
+          <li>
+            <h3>Skydeck Chicago</h3>
+          </li>
+        </ul>
+        <form method="GET">
+          <p>
+              <label for="suggestions-input">Add your suggestions for activities below</label>
+          </p>
+          <textarea name="bio" id="suggestions-input">Enter your suggestions here.</textarea>
+          <button type="submit" value="submit">Submit</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <h3 class="contact">Contact: </h3>
       <p class="contact">eunhae.l@wustl.edu</p>
